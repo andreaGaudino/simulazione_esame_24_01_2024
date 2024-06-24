@@ -37,10 +37,11 @@ class Controller:
             return
         self.metodo = self._view.ddMetodo.value
         if self.metodo is None:
-            self._view.create_alert("Metodo non inserito")
-            self._view.txtResult.clean()
-            self._view.update_page()
-            return
+                self._view.create_alert("Metodo non inserito")
+                self._view.txtResult.clean()
+                self._view.update_page()
+                return
+
         self.S = self._view.valoreS.value
         if self.S == "":
             self._view.create_alert("Valore numerico non inserito")
